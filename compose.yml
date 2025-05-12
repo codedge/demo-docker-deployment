@@ -1,0 +1,9 @@
+services:
+    php:
+        build: .
+        ports:
+            - "9029:8080"
+        volumes:
+            -   .:/var/www/html
+        environment:
+            APP_ENV: dev
