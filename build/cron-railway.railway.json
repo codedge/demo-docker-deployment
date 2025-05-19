@@ -1,0 +1,8 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "deploy": {
+    "cronSchedule": "* * * * *",
+    "startCommand": "php bin/console app:cron:railway $(date '+%FT%H:%M:%S')",
+    "restartPolicyType": "ALWAYS"
+  }
+}
