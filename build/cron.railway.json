@@ -1,0 +1,7 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "deploy": {
+    "startCommand": "php bin/console messenger:consume --time-limit=3600 -- async",
+    "restartPolicyType": "ALWAYS"
+  }
+}

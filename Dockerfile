@@ -3,6 +3,7 @@ FROM serversideup/php:8.4-fpm-nginx
 COPY composer.* symfony.lock ./
 COPY .env ./
 COPY bin bin/
+COPY build build/
 COPY config config/
 COPY migrations migrations/
 COPY public public/
