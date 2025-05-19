@@ -4,6 +4,7 @@ COPY composer.* symfony.lock ./
 COPY .env ./
 COPY bin bin/
 COPY config config/
+COPY migrations migrations/
 COPY public public/
 COPY src src/
 
