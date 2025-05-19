@@ -18,5 +18,7 @@ RUN set -eux; \
 # Otherwise the web server cannot write the cache directory
 RUN chown -R www-data:www-data var
 
+COPY --chmod=755 ./entrypoint.d/ /etc/entrypoint.d/
+
 # Switch back to the unprivileged www-data user
 USER www-data
